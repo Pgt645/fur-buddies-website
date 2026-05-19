@@ -1,0 +1,241 @@
+/*
+Author: Princess Garcia
+Date: 5/16/26
+File Name: styles.css
+*/
+
+/* CSS RESET */
+body, header, nav, main, footer, h1, h2, p, ul, li, div, img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* BODY */
+body {
+	background-color: #4a0b0b; /* dark red */
+	font-family: "Roboto Slab", serif;
+	color: #fff8dc; /* light yellow */
+}
+
+/* CONTAINER */
+#container {
+	width: 100%;
+}
+
+/* HEADER */
+header {
+	background-color: #000;
+	text-align: center;
+	padding: 1%;
+}
+
+/* LOGO IMAGE */
+header img {
+	width: 300px;
+}
+
+/* NAV */
+nav {
+	background-color: #2b0000;
+}
+
+nav ul {
+	list-style: none;
+	text-align: center;
+}
+
+nav li {
+	border-top: 1px solid #fff8dc;
+}
+
+nav li a {
+	display: block;
+	padding: 1em;
+	color: #fff8dc;
+	text-decoration: none;
+	font-family: "Fredoka", sans-serif;
+	font-size: 1.5em;
+}
+
+nav li a:hover {
+	background-color: #fff8dc;
+	color: #4a0b0b;
+}
+
+/* DOGCAT IMAGE */
+#dogcat img {
+	width: 80%;
+	max-width: 700px;
+	display: block;
+	margin: 0 auto;
+	border-radius: 10px;
+}
+
+/* MAIN */
+main {
+	background-color: #6a0f0f;
+	padding: 2%;
+}
+
+/* WELCOME */
+.welcome {
+	text-align: center;
+	padding: 2%;
+}
+
+.welcome h1 {
+	margin-bottom: 1em;
+	font-size: 2.5em;
+}
+
+.welcome p {
+	font-size: 1.3em;
+	line-height: 1.6;
+	margin-bottom: 1em;
+}
+
+/* BUTTON */
+.button {
+	display: inline-block;
+	background-color: #fff8dc;
+	color: #4a0b0b;
+	padding: 1em 1.8em;
+	border-radius: 8px;
+	font-size: 1.3em;
+	margin-top: 1.5em;
+	font-weight: bold;
+}
+
+.button:hover {
+	background-color: black;
+	color: #fff8dc;
+}
+
+/* PET CARDS */
+.pet-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 15px;
+}
+
+.pet-card {
+	background-color: #fff8dc;
+	color: black;
+	padding: 1em;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.pet-card img {
+	border-radius: 10px;
+	width: 90%;
+	max-width: 300px;
+	display: block;
+	margin: 0 auto;
+}
+
+.pet-card h2 {
+	color: #4a0b0b;
+	font-size: 2em;
+	margin-top: 0.5em;
+}
+
+.pet-card p {
+	font-size: 1.2em;
+	line-height: 1.5;
+}
+
+*/ ADOPT PAGE TITLE */
+.center {
+	text-align: center;
+	margin-top: -10px;
+	margin-bottom: 1em;
+	font-size: 2.3em;
+}
+
+/* SECTIONS */
+.section {
+	padding: 1em;
+	margin-bottom: 1em;
+}
+
+.section p {
+	font-size: 1.3em;
+	line-height: 1.6;
+}
+
+.section li {
+	font-size: 1.3em;
+	line-height: 1.6;
+	margin-left: 1.5em;
+}
+
+/* CONTACT */
+#contact {
+	text-align: center;
+	padding: 2%;
+}
+
+#contact p {
+	font-size: 1.3em;
+	line-height: 1.6;
+}
+
+.tel-link {
+	background-color: black;
+	padding: 1em;
+	margin: 1em auto;
+	width: 70%;
+	border-radius: 10px;
+}
+
+.tel-link a {
+	color: #fff8dc;
+	text-decoration: none;
+	font-size: 1.6em;
+	font-weight: bold;
+}
+
+.email-link {
+	color: #fff8dc;
+}
+
+/* SHELTER IMAGE */
+#contact .round {
+	width: 60%;
+	max-width: 400px;
+	display: block;
+	margin: 1em auto;
+	border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+	background-color: black;
+	text-align: center;
+	padding: 1em;
+	margin-top: 2em;
+}
+
+/* TABLET */
+@media screen and (min-width: 630px) {
+
+	.pet-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	nav li {
+		display: inline-block;
+		border-top: none;
+		margin: 0 1%;
+	}
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1015px) {
+
+	.pet-grid {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
